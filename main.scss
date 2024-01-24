@@ -6,7 +6,12 @@
 
 :root {
     --bs-font-sans-serif: Poppins;
-  }
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    margin-bottom: 100px;
+}
 
 #navButtons {
     font-weight: 600;
@@ -15,3 +20,70 @@
 #navButtons:hover {
     text-decoration: underline;
 }
+#linkButtons {
+    color: #252525;
+}
+#linkButtons:hover {
+    color: #707070;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    scroll-snap-type: y mandatory;
+}
+section {
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+}
+
+.imageOfMe {
+    padding-right:3px;
+    padding-top: 3px;
+    display:inline-block;
+    position: absolute;
+    
+    left: 50%;
+    top: 10%;
+    
+}
+.headShot {
+    height: 300px;
+    padding-right: 100px;
+}
+@media screen and (min-width: 300px) {
+    .headShot {
+      height: calc(300px + 160 * ((100vw - 568px) / (768 - 568)));
+      width: auto;
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    .headShot {
+      height: 800px;
+    }
+  }
+
+/* Fixed minimum value below the minimum breakpoint */
+.fluidText {
+    font-size: 32px;
+  }
+  
+  /* Fluid value from 568px to 768px viewport width */
+  @media screen and (min-width: 300px) {
+    .fluidText {
+      font-size: calc(32px + 16 * ((100vw - 568px) / (768 - 568)));
+    }
+  }
+  
+  /* Fixed maximum value above the maximum breakpoint */
+  @media screen and (min-width: 1000px) {
+    .fluidText {
+      font-size: 90px;
+    }
+  }
+
+  .introTextDiv {
+  }
