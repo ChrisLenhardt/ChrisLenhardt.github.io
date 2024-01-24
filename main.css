@@ -12041,23 +12041,12 @@ section {
   float: left;
   display: block;
   max-width: 50%;
-}
-
-.headShot {
-  margin: 0;
-  float: left;
-  max-height: 100vh;
-  display: block;
-  margin-right: 50px;
+  padding-right: 50px;
 }
 
 #headShot {
-  margin-right: 50px;
+  height: 50%;
   width: 50%;
-  max-height: 100vh;
-  height: auto;
-  display: block;
-  float: left;
 }
 
 .linkArea {
@@ -12070,30 +12059,30 @@ section {
   height: 192px;
 }
 
-@media screen and (max-width: 600px) {
+#headShotDiv {
+  max-width: 50%;
+}
+
+@media screen and (max-width: 300px) {
   #introTextDiv {
     width: 100%;
     display: block;
   }
-  .headShot {
-    width: 100%;
-    display: block;
-  }
-  #headshot {
-    width: 100%;
-    display: block;
-  }
-  #linkArea {
-    width: 100%;
-    display: block;
-  }
 }
-@media screen and (min-width: 200px) {
-  #headShot {
-    height: calc(300px + 160 * (100vw - 568px) / 200);
-    width: auto;
-  }
+.pictureOfMe {
+  margin-top: 70px;
+  position: absolute;
+  right: 5%;
+  height: auto;
+  width: 50%;
 }
-.intro {
-  display: block;
+
+@media screen and (max-width: 800px) {
+  .pictureOfMe {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    bottom: -5%;
+  }
 }/*# sourceMappingURL=main.css.map */
