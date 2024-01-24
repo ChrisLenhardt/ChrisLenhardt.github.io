@@ -33,52 +33,49 @@
 </div>
 
   <body>
-    <section style="margin: 10px;">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-6">
-                <p class="homeBody" style="
-                font-size: 90px;
-                font-weight: 600;
-                    ">
-                    Hi,<br>
-                    I am <span style="font-size: 90px;
-                    font-weight: 600; color: #A93A09;">Chris</span><br>
-                    <p id="words" style="
-                    font-size: 90px;
-                    font-weight: 600;
-                        ">
-                        Ui/Ux Design
-                    </p>
-                </p>
-                <button class="btn btn-primary" style="background-color:#A93A09;
-                height: 60px;
-                width: 170px;
-                border-radius: 12px;
-                border: 0cm;
-                margin-top: 40px;">
-                    <span style="color: rgb(25, 25, 25);
-                    font-size: 24px;
-                    font-weight: 500;">
-                        Connect
-                    </span>
-                </button>
-            </div>
-            <div class="col-lg-6">
-                <div class="container">
-                    <div class="float-right">
-                        <img class="img" style="height: 100%; max-width: 100%;" src="images/headshotv1.png">
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="intro" style="margin: 10px;">
+      <!--Smart Text Starts Here-->
+      <div id="introText">
+        <p class="fluidText">
+          Hi,<br>
+          I am <span class="fluidText" style="color: #A93A09;">Chris</span><br>
+          <p class="fluidText" id="words">
+              UI/UX Design
+          </p>
+      </p>
+
+      <div id="linkArea">
+        <button class="btn btn-primary" style="background-color:#A93A09;
+                    height: 60px;
+                    width: 170px;
+                    border-radius: 12px;
+                    border: 0cm;
+                    margin-top: 40px;">
+                        <span style="color: rgb(25, 25, 25);
+                        font-size: 24px;
+                        font-weight: 500;">
+                            Connect
+                        </span>
+                    </button>
+                  </div>
     </div>
-  </section>
-  <section>
+      <!--Image division starts here-->
+      <div id="headShot">
+        <img src="images/headshotv1.png" class="headShot">
+      </div>
+      <!--Connect Button here-->
+  
+
+    </section>
+
+
+  <section style="background-color: bisque;">
     
     <p>
       dwadw
     </p>
+
+
   </section>
   
 
@@ -86,7 +83,7 @@
 
     <script type="text/javascript">
         (function () {
-          var words = ["Ui / UX Design","Photographer","Developer","Student"],
+          var words = ["UI / UX Design","Photographer","Developer","Student"],
           i = 0;
           setInterval(function(){ $('#words').fadeOut(function(){
               $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
