@@ -42,13 +42,14 @@ section {
 
 /* Fixed minimum value below the minimum breakpoint */
 .fluidText {
-    font-size: 32px;
+    font-size: 50px;
+    font-weight: 500;
   }
   
   /* Fluid value from 568px to 768px viewport width */
   @media screen and (min-width: 300px) {
     .fluidText {
-      font-size: calc(32px + 16 * ((100vw - 568px) / (768 - 568)));
+      font-size: calc(40px + 16 * ((100vw - 568px) / (768 - 568)));
     }
   }
   
@@ -104,4 +105,7 @@ section {
       position: absolute;
       bottom: -5%;
     }
+  }
+  .myNavBar {
+      transition: all .5s;
   }
