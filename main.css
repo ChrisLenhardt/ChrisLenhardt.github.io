@@ -12089,4 +12089,22 @@ section {
 }
 .myNavBar {
   transition: all 0.5s;
+}
+
+.section2Headers {
+  color: white;
+}
+
+.section2Text {
+  color: white;
+}
+
+#aboutMe {
+  display: block;
+  size: 50%;
+}
+
+#overTheYears {
+  display: block;
+  size: 50%;
 }/*# sourceMappingURL=main.css.map */
