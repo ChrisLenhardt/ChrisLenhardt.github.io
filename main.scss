@@ -12,17 +12,17 @@
     display: block;
 }
 
-#navButtons {
+.nav-link {
     font-weight: 600;
     color: #252525;
 }
-#navButtons:hover {
+.nav-link:hover {
     text-decoration: underline;
 }
-#linkButtons {
+.nav-link {
     color: #252525;
 }
-#linkButtons:hover {
+.nav-link:hover {
     color: #707070;
 }
 
@@ -36,7 +36,7 @@ body {
 section {
     height: 100vh;
     width: 100vw;
-    scroll-snap-align: start;
+    
 }
 
 /* Fixed minimum value below the minimum breakpoint */
@@ -60,11 +60,11 @@ section {
   }
 
   #introText {
-    margin-top: 20%;
+    margin-top: 15%;
     float:left;
     display: block;
     max-width: 50%;
-    padding-right: 50px;
+    margin-right: 150px;
     margin-bottom: 10%;
   }
   #headShot {
@@ -91,7 +91,7 @@ section {
   }
 
   .pictureOfMe {
-    margin-top: 20%;
+    margin-top: 10%;
     position: absolute;
     right: 5%;
     height: auto;
@@ -125,10 +125,15 @@ section {
   }
 
   #aboutMe {
-    margin-top: 500px;
+    margin-top: 5%;
   }
 
   #part2Body {
     margin: 50px;
+    padding-top: 50px;
     position: relative;
+  }
+
+  #part3 {
+    background-color: rgb(50,50,50);
   }
