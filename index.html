@@ -1,93 +1,82 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Chris Lenhardt</title>
-    <link rel="stylesheet" href="main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> 
-    <script src="script.js"></script>
-  </head>
-<div style="margin-top:0px;">
-  <nav class="navbar">
-    <div class="container">
-        <a href="#" class="navbar-brand">
-          <p class="myNavBar">
-            Chris.
-          </p>
-        </a>
-        <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#" id="navButtons">
-                <p class="myNavBar">
-                  Home
-                </p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#part2" id="navButtons">
-                <p class="myNavBar">
-                  About
-                </p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" id="navButtons">
-                <p class="myNavBar">
-                  Works
-                </p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" id="navButtons">
-                <p class="myNavBar">
-                  Contact
-                </p>
-              </a>
-            </li>
-          </ul>
-          <hr style="margin: 0;">
-  </nav>
-</div>
 
-  <body onload="textScroll()">
-    <section class="intro" style="margin: 10px;">
-      <!--Smart Text Starts Here-->
-      <div id="introText">
-        <p class="fluidText">
-          Hi,<br>
-          I am <span class="fluidText" style="color: #A93A09;">Chris</span><br>
-          <p class="fluidText" id="words">
-              UI/UX Design
-          </p>
-        </p>
-      </div>
-      <!--Image division starts here-->
-      <div class="headShotDiv">
-        <picture>
-          <source
-      srcset="images/headshotv1.png"
-      sizes="(min-width: 1280px) 600px,
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chris Lenhardt</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</head>
+  <header class="navbar navbar-expand flex-md-row bd-navbar">
+      <a class="navbar-brand mr-0 md-2" href="#">
+          Chris.
+      </a>
+      <div class="navbar-nav-scroll">
+      <ul class="navbar-nav bd-navbar-nav flex-row">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" id="navButtons">
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#part2" id="navButtons">
+            About
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="navButtons">
+            Works
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="navButtons">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+      <hr style="margin: 0;">
+    </header>
+<div class="container-fluid">
+<body onload="textScroll()">
+  <section class="intro" style="margin: 10px;">
+    <!--Smart Text Starts Here-->
+    <div id="introText">
+      <p class="fluidText">
+        Hi,<br>
+        I am <span class="fluidText" style="color: #A93A09;">Chris</span><br>
+      <p class="fluidText" id="words">
+        UI/UX Design
+      </p>
+      </p>
+    </div>
+    <!--Image division starts here-->
+    <div class="headShotDiv">
+      <picture>
+        <source srcset="images/headshotv1.png" sizes="(min-width: 1280px) 600px,
              (min-width: 768px) 2000px,
              50vw">
-          <img src="images/headshotv1.png" class="pictureOfMe">
-        </picture>
-      </div>
-    </section>
+        <img src="images/headshotv1.png" class="pictureOfMe">
+      </picture>
+    </div>
+  </section>
 
 
   <section id="part2" style="background-color: rgb(50,50,50);">
-      <div id="aboutMe">
-        <h1 class="section2Headers">
+    <div id="part2Body">
+      <div>
+        <h1 class="section2Headers" id="aboutMe">
           About Me
         </h1>
         <p class="section2Text">
-          I am currently a first-year student at Georgia Tech studying 
-          Computer Science. I look forward to graduating and pursuing a 
-          career that combines the ever-changing field of machine learning 
-          and robotics. Most of my experience lies in creating attractive 
-          and responsive UI’s 
+          I am currently a first-year student at Georgia Tech studying
+          Computer Science. I look forward to graduating and pursuing a
+          career that combines the ever-changing field of machine learning
+          and robotics. Most of my experience lies in creating attractive
+          and responsive UI’s
         </p>
       </div>
       <div id="overTheYears">
@@ -98,23 +87,28 @@
 
         </p>
       </div>
+    </div>
   </section>
 
   <section id="part3">
 
   </section>
-  
+
   <script type="text/javascript">
     (function () {
-      var words = ["UI / UX Design","Photographer","Developer","Student"],
-      i = 0;
-      setInterval(function(){ $('#words').fadeOut(function(){
+      var words = ["UI / UX Design", "Photographer", "Developer", "Student"],
+        i = 0;
+      setInterval(function () {
+        $('#words').fadeOut(function () {
           $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
-        }); }, 3000)
+        });
+      }, 3000)
     })();
   </script>
-    
 
-    
-  </body>
+
+
+</body>
+</div>
+
 </html>

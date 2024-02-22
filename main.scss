@@ -9,7 +9,6 @@
 .navbar {
     position: fixed;
     width: 100%;
-    margin-bottom: 100px;
     display: block;
 }
 
@@ -61,11 +60,12 @@ section {
   }
 
   #introText {
-    margin-top: 70px;
+    margin-top: 20%;
     float:left;
     display: block;
     max-width: 50%;
     padding-right: 50px;
+    margin-bottom: 10%;
   }
   #headShot {
     height: 50%;
@@ -91,7 +91,7 @@ section {
   }
 
   .pictureOfMe {
-    margin-top: 70px;
+    margin-top: 20%;
     position: absolute;
     right: 5%;
     height: auto;
@@ -123,4 +123,12 @@ section {
     display: block;
     size: 50%;
   }
-  
+
+  #aboutMe {
+    margin-top: 500px;
+  }
+
+  #part2Body {
+    margin: 50px;
+    position: relative;
+  }
